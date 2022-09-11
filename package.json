@@ -1,0 +1,22 @@
+{
+  "name": "exoplanets-node",
+  "version": "1.0.0",
+  "description": "Basic Node App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barnwalp/exoplanets-node.git"
+  },
+  "author": "Pankaj Barnwal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/barnwalp/exoplanets-node/issues"
+  },
+  "homepage": "https://github.com/barnwalp/exoplanets-node#readme",
+  "dependencies": {
+    "csv-parse": "^5.3.0"
+  }
+}
