@@ -1,12 +1,16 @@
 // return value of the csv-parse is a function, which returns and 
 // event emittor that deals with stream of data from a file, parse()
 // does not deals with files directly, it only knows about stream
-const parse = require('csv-parse');
+const { parse } = require('csv-parse');
 const fs = require('fs');
 
 const results =[];
 
 fs.createReadStream('./kepler_data.csv')
+	.pipe(parse({
+		comment: '#',
+		columns: true,
+	}))
 	.on('data', (data) => {
 		results.push(data);
 	})
